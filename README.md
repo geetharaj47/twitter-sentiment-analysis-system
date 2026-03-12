@@ -8,10 +8,10 @@ Transformer-Powered NLP Application for Real-Time Tweet Sentiment Prediction
 <a href="#technologies">Technologies</a> •
 <a href="#features">Features</a> •
 <a href="#architecture">Architecture</a> •
+<a href="#screenshots">Screenshots</a> •
 <a href="#installation">Installation</a> •
 <a href="#usage">Usage</a> •
-<a href="#api">API</a> •
-<a href="#screenshots">Screenshots</a>
+<a href="#api">API</a>
 </p>
 
 <p align="center">
@@ -26,54 +26,53 @@ Transformer-Powered NLP Application for Real-Time Tweet Sentiment Prediction
 
 # Technologies
 
-This project integrates modern **machine learning and backend technologies**.
-
 ### Machine Learning
 - PyTorch
 - HuggingFace Transformers
-- BERT (Bidirectional Encoder Representations from Transformers)
+- BERT Transformer Model
 
 ### Data Processing
 - Pandas
 - NumPy
 - Scikit-learn
 
-### Backend API
+### Backend
 - FastAPI
 - Uvicorn
 
-### Frontend Interface
+### Frontend
 - Streamlit
 
 ---
 
 # Features
 
-### Real-Time Sentiment Prediction
+### Real-Time Tweet Sentiment Prediction
 Predicts tweet sentiment instantly using trained NLP models.
 
-### Transformer-Based NLP
-Uses **BERT transformer architecture** for accurate sentiment classification.
+### Transformer-Based NLP Model
+Uses **BERT** for high-accuracy sentiment classification.
 
 ### REST API
-FastAPI backend for scalable model inference.
+FastAPI backend provides scalable model inference.
 
 ### Interactive Web UI
-Streamlit dashboard for easy sentiment prediction testing.
+Streamlit interface allows quick testing of predictions.
 
 ### Multiple Models Implemented
 
-The project includes three models:
+The project includes:
 
 • Baseline ML Model  
 • LSTM Deep Learning Model  
 • BERT Transformer Model  
 
-This allows comparison between classical ML and modern transformer architectures.
+This enables comparison between classical ML approaches and modern transformer architectures.
 
 ---
 
 # Architecture
+
 
 User Input (Tweet)
 ↓
@@ -90,6 +89,20 @@ Sentiment Prediction
 
 ---
 
+# Screenshots
+
+## FastAPI API Documentation
+
+![API Docs](assets/api_docs.png)
+
+---
+
+## Streamlit Web Interface
+
+![Streamlit UI](assets/streamlit_ui.png)
+
+---
+
 # Installation
 
 Clone the repository
@@ -97,6 +110,7 @@ Clone the repository
 ```bash
 git clone https://github.com/geetharaj47/twitter-sentiment-analysis-system.git
 cd twitter-sentiment-analysis-system
+
 Install dependencies
 
 pip install -r requirements.txt
@@ -104,14 +118,11 @@ Usage
 Run the FastAPI Backend
 uvicorn src.api.app:app --reload
 
-Open API docs in browser:
+Open API documentation:
 
 http://127.0.0.1:8000/docs
-Run the Streamlit Web App
+Run the Streamlit Web Interface
 streamlit run src/ui/streamlit_app.py
-
-This launches the interactive sentiment prediction dashboard.
-
 API
 Endpoint
 POST /predict
@@ -141,31 +152,35 @@ twitter-sentiment-analysis-system
 ├── results
 │
 ├── src
-│   │
+│
 │   ├── api
 │   │   └── app.py
-│   │
+│
 │   ├── data
 │   │   └── preprocess_data.py
-│   │
+│
 │   ├── models
 │   │   ├── baseline_model.py
 │   │   ├── lstm_model.py
 │   │   └── bert_sentiment_model
-│   │
+│
 │   ├── training
 │   │   └── train_lstm.py
-│   │
+│
 │   ├── transformer
 │   │   ├── train_bert.py
 │   │   └── predict_bert.py
-│   │
+│
 │   └── ui
 │       └── streamlit_app.py
 │
 ├── requirements.txt
 └── README.md
-Screenshots
-FastAPI Documentation
+Author
 
-Streamlit Web Interface
+Geetharaj
+
+Machine Learning & Data Engineering Enthusiast
+
+GitHub
+https://github.com/geetharaj47
