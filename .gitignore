@@ -1,0 +1,20 @@
+# virtual environments
+venv/
+.env/
+
+# python cache
+__pycache__/
+*.pyc
+
+# dataset files
+data/raw/
+
+# trained models
+models/
+
+# notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
